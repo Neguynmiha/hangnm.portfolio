@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyen Minh Hang | Professional Portfolio - International Business & Product Management</title>
+    <meta name="description" content="Professional Portfolio of Nguyen Minh Hang - Final-year International Business student at Foreign Trade University with interest in Product Management and Business Operations.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Grid & Glow Overlay -->
+    <div class="bg-glow-overlay"></div>
+
+    <!-- Header Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" onclick="goToSlide(0); return false;">
+                <span class="logo-badge">MH</span>
+                <span class="logo-text">Nguyen Minh Hang <small>Portfolio</small></span>
+            </a>
+            <nav class="nav-links" id="nav-links">
+                <a href="#" class="nav-link active" onclick="goToSlide(0); return false;">Home</a>
+                <a href="#" class="nav-link" onclick="goToSlide(1); return false;">About</a>
+                <a href="#" class="nav-link" onclick="goToSlide(2); return false;">Education</a>
+                <a href="#" class="nav-link" onclick="goToSlide(3); return false;">Experience</a>
+                <a href="#" class="nav-link" onclick="goToSlide(4); return false;">Projects</a>
+                <a href="#" class="nav-link" onclick="goToSlide(5); return false;">Activities</a>
+                <a href="#" class="nav-link" onclick="goToSlide(6); return false;">Events</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN FULLPAGE SLIDER WRAPPER -->
+    <main class="slider-viewport" id="slider-viewport">
+        <div class="slides-wrapper" id="slides-wrapper">
+
+            <!-- SLIDE 1: HERO / EXECUTIVE OVERVIEW -->
+            <section class="slide-page active" data-index="0">
+                <div class="container slide-container">
+                    <div class="hero-grid">
+                        <div class="hero-text-content">
+                            <div class="badge hero-badge">
+                                <span class="badge-dot"></span> Foreign Trade University
+                            </div>
+                            
+                            <h1 class="hero-title">
+                                Nguyen Minh Hang
+                            </h1>
+                            
+                            <p class="hero-role-subtitle">
+                                International Business Student | Product Management & Business Operations
+                            </p>
+
+                            <p class="hero-desc">
+                                Final-year International Business student at Foreign Trade University with academic knowledge of international business operations, supply chain management, and international trade. Experienced in community development, relationship building, and cross-cultural communication, with a strong interest in Product Management, Business Operations, business strategy, data-driven problem-solving, and technology-driven business growth.
+                            </p>
+
+                            <!-- Quick Contact Pills -->
+                            <div class="quick-contact-pills">
+                                <span class="contact-pill">📍 Hanoi, Vietnam</span>
+                                <a href="mailto:nmh09202005@gmail.com" class="contact-pill pill-link">✉️ nmh09202005@gmail.com</a>
+                                <a href="tel:0976490201" class="contact-pill pill-link">📞 0976 490 201</a>
+                                <span class="contact-pill">🎂 Sept 20, 2005</span>
+                            </div>
+                        </div>
+
+                        <!-- Profile Avatar Card with 2 CTA Buttons below Avatar -->
+                        <div class="hero-avatar-wrapper">
+                            <div class="glass-card profile-card">
+                                <div class="avatar-ring">
+                                    <img id="user-avatar-img" src="./Avatar.jpg" alt="Nguyen Minh Hang Avatar" class="avatar-img">
+                                </div>
+                                <div class="avatar-cta-group">
+                                    <button class="btn btn-primary" onclick="nextSlide()">
+                                        <span>Explore Portfolio</span>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                                    </button>
+                                    <button class="btn btn-secondary" onclick="goToSlide(3)">
+                                        <span>View Experience</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 2: ABOUT ME & CORE COMPETENCIES -->
+            <section class="slide-page" data-index="1">
+                <div class="container slide-container">
+                    <div class="section-header center">
+                        <span class="section-kicker">PROFILE OVERVIEW</span>
+                        <h2 class="section-heading">About Me & Core Competencies</h2>
+                        <p class="section-subtitle">Driven by strategic thinking, data-backed insights, and operational execution</p>
+                    </div>
+
+                    <div class="about-grid">
+                        <div class="glass-card about-statement-card">
+                            <h3 class="card-heading-md">Professional Summary</h3>
+                            <p class="statement-body">
+                                Final-year International Business student at Foreign Trade University with academic knowledge of international business operations, supply chain management, and international trade. 
+                            </p>
+                            <p class="statement-body">
+                                Experienced in community development, relationship building, and cross-cultural communication, with a track record of managing community channels and coordinating activities. Brings a strong interest in Product Management, Business Operations, business strategy, data-driven problem-solving, and technology-driven business growth, alongside an adaptable mindset and a proactive approach to learning in dynamic, multicultural environments.
+                            </p>
+                        </div>
+
+                        <div class="skills-competency-grid">
+                            <div class="glass-card skill-card">
+                                <div class="skill-icon">🎯</div>
+                                <h4>Product & Operations</h4>
+                                <p>Market positioning, pricing strategy, consumer differentiation & workflow optimization.</p>
+                            </div>
+
+                            <div class="glass-card skill-card">
+                                <div class="skill-icon">📊</div>
+                                <h4>Data & Analytics</h4>
+                                <p>Excel (data cleaning, PivotTables, lookup functions, data analysis) & Power BI visualization.</p>
+                            </div>
+
+                            <div class="glass-card skill-card">
+                                <div class="skill-icon">👥</div>
+                                <h4>Leadership & Team Coordination</h4>
+                                <p>Task delegation, volunteer onboarding curriculum design, team leadership & class execution.</p>
+                            </div>
+
+                            <div class="glass-card skill-card">
+                                <div class="skill-icon">🌐</div>
+                                <h4>Cross-Cultural Communication</h4>
+                                <p>Multicultural relationship building, event facilitation, presentation & community engagement.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 3: EDUCATION & RELEVANT COURSEWORK -->
+            <section class="slide-page" data-index="2">
+                <div class="container slide-container">
+                    <div class="section-header center">
+                        <span class="section-kicker">ACADEMIC BACKGROUND</span>
+                        <h2 class="section-heading">Education & Relevant Coursework</h2>
+                    </div>
+
+                    <div class="education-featured-box">
+                        <div class="glass-card edu-main-card">
+                            <div class="edu-card-header">
+                                <!-- LOCAL FTU LOGO FROM FOLDER -->
+                                <div class="edu-logo-badge ftu-logo-container" title="Foreign Trade University">
+                                    <img src="./logo ftu.jpg" alt="Foreign Trade University Logo" class="ftu-logo-img">
+                                </div>
+                                <div>
+                                    <span class="edu-period">Sep 2023 - Apr 2027 (Expected)</span>
+                                    <h3 class="edu-university">Foreign Trade University</h3>
+                                    <p class="edu-degree-title">Bachelor of International Business</p>
+                                </div>
+                                <div class="gpa-pill-lg">
+                                    <span>GPA: <strong>3.38 / 4.0</strong></span>
+                                </div>
+                            </div>
+
+                            <div class="coursework-divider"></div>
+
+                            <h4 class="coursework-heading">Relevant Coursework</h4>
+                            <div class="coursework-tags-grid">
+                                <div class="course-chip">
+                                    <span class="chip-icon">🏢</span>
+                                    <div>
+                                        <strong>International Business Operations</strong>
+                                        <small>Global business operations & strategy execution</small>
+                                    </div>
+                                </div>
+                                <div class="course-chip">
+                                    <span class="chip-icon">🚚</span>
+                                    <div>
+                                        <strong>Supply Chain Management</strong>
+                                        <small>Logistics, procurement & supply chain optimization</small>
+                                    </div>
+                                </div>
+                                <div class="course-chip">
+                                    <span class="chip-icon">🤝</span>
+                                    <div>
+                                        <strong>International Trade Transactions</strong>
+                                        <small>Trade contracts, export-import operations & documentation</small>
+                                    </div>
+                                </div>
+                                <div class="course-chip">
+                                    <span class="chip-icon">📜</span>
+                                    <div>
+                                        <strong>International Trade Policy</strong>
+                                        <small>Trade agreements, tariff structures & regulatory policies</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 4: PROFESSIONAL EXPERIENCE -->
+            <section class="slide-page" data-index="3">
+                <div class="container slide-container">
+                    <div class="section-header center">
+                        <span class="section-kicker">CAREER HISTORY</span>
+                        <h2 class="section-heading">Professional Experience</h2>
+                    </div>
+
+                    <div class="experience-full-wrapper">
+                        <div class="glass-card exp-card-featured">
+                            <div class="exp-card-header">
+                                <div>
+                                    <span class="exp-company">HELINK INTERNATIONAL COOPERATE CO., LTD</span>
+                                    <h3 class="exp-role">Community Development Specialist</h3>
+                                </div>
+                                <span class="exp-date-badge">Nov 2025 - Present</span>
+                            </div>
+
+                            <div class="exp-impact-metrics">
+                                <div class="metric-box">
+                                    <span class="metric-number">150+</span>
+                                    <span class="metric-label">International Members Connected</span>
+                                </div>
+                                <div class="metric-box">
+                                    <span class="metric-number">800+</span>
+                                    <span class="metric-label">Meetup Community Reach</span>
+                                </div>
+                                <div class="metric-box">
+                                    <span class="metric-number">3+</span>
+                                    <span class="metric-label">Weekly Activities Coordinated</span>
+                                </div>
+                                <div class="metric-box">
+                                    <span class="metric-number">30 - 40</span>
+                                    <span class="metric-label">Active Participants / Event</span>
+                                </div>
+                            </div>
+
+                            <ul class="exp-bullet-list">
+                                <li>Connected with <strong>150+ international community members</strong> through Meetup and other community channels to expand HNE’s network and support participation in language and cultural exchange activities.</li>
+                                <li>Managed an <strong>800+ member international community</strong> on Meetup and coordinated <strong>3+ activities/week</strong>, maintaining 30 - 40 active participants per activity to drive continuous engagement.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 5: LEADERSHIP & STRATEGIC PROJECTS -->
+            <section class="slide-page" data-index="4">
+                <div class="container slide-container">
+                    <div class="section-header center">
+                        <span class="section-kicker">INITIATIVES & STRATEGY</span>
+                        <h2 class="section-heading">Leadership & Projects</h2>
+                    </div>
+
+                    <div class="projects-two-column">
+                        <!-- Project 1 -->
+                        <div class="glass-card proj-card">
+                            <div class="proj-badge">Leadership & Training</div>
+                            <h3 class="proj-title">HANOI EXPLORING</h3>
+                            <p class="proj-subtitle">Head of Academic Team (Apr 2026 - Present)</p>
+                            <ul class="proj-list">
+                                <li>Led a team of <strong>7–10 members</strong>, assigning responsibilities and providing guidance to ensure effective execution of community classes.</li>
+                                <li>Designed and delivered a <strong>one-month onboarding and training program</strong> for new volunteers, enabling them to independently deliver Vietnamese lessons with solid teaching and classroom management skills and develop lesson plans tailored to learners' needs.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="glass-card proj-card">
+                            <div class="proj-badge badge-alt">Product Strategy & Research</div>
+                            <h3 class="proj-title">PROJECT SOFTIE LAUNDRY DETERGENT</h3>
+                            <p class="proj-subtitle">Aug 2025 - Nov 2025</p>
+                            <ul class="proj-list">
+                                <li>Conducted competitor and pricing analysis across relevant laundry detergent products to assess market positioning and consumer-oriented product differentiation.</li>
+                                <li>Compared product features, pricing, and competitor positioning to identify potential market opportunities.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 6: COMMUNITY IMPACT & EXTRA-CURRICULAR -->
+            <section class="slide-page" data-index="5">
+                <div class="container slide-container">
+                    <div class="section-header center">
+                        <span class="section-kicker">SOCIAL RESPONSIBILITY</span>
+                        <h2 class="section-title-lg">Extra-Curricular & Community Impact</h2>
+                    </div>
+
+                    <div class="activities-flex-grid">
+                        <div class="glass-card act-glass-box">
+                            <div class="act-icon-header">❤️</div>
+                            <span class="act-year">2023 – 2025</span>
+                            <h3 class="act-org-name">Community Volunteer Campaign</h3>
+                            <p class="act-org-role">Volunteer & Logistics Coordinator</p>
+                            <p class="act-org-desc">
+                                Supported fundraising activities and managed end-to-end logistics operations for charitable relief programs in remote, underprivileged mountain regions.
+                            </p>
+                        </div>
+
+                        <div class="glass-card act-glass-box">
+                            <div class="act-icon-header">📚</div>
+                            <span class="act-year">2022 – 2023</span>
+                            <h3 class="act-org-name">Book & Action Club</h3>
+                            <p class="act-org-role">Head of Content & Logistics (Viet Yen No.1 High School)</p>
+                            <ul class="act-org-bullets">
+                                <li>Created, curated, and approved official media and communication content on the club's official Fanpage.</li>
+                                <li>Planned, assigned tasks, and supervised member execution for large-scale book reading cultural events.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 7: FEATURED CULTURAL EVENTS & WORKSHOPS GALLERY -->
+            <section class="slide-page" data-index="6">
+                <div class="container slide-container">
+                    <div class="section-header center">
+                        <span class="section-kicker">EVENT GALLERY</span>
+                        <h2 class="section-heading">Featured Cultural Events & Workshops</h2>
+                        <p class="section-subtitle">Hands-on workshops, cooking classes, and language exchanges organized for international guests</p>
+                    </div>
+
+                    <div class="gallery-grid">
+
+                        <!-- Event 1: Bamboo Soul -->
+                        <div class="glass-card gallery-item-card">
+                            <div class="gallery-img-container">
+                                <img src="./WS Làm quạt nan.jpg" alt="The Bamboo Soul Workshop" class="gallery-img">
+                            </div>
+                            <div class="gallery-card-content">
+                                <span class="gallery-tag">Cultural Workshop</span>
+                                <h3 class="gallery-card-title">Workshop "The Bamboo Soul"</h3>
+                                <p class="gallery-card-desc">Interactive craft workshop guiding international guests in making traditional Vietnamese bamboo fans.</p>
+                            </div>
+                        </div>
+
+                        <!-- Event 2: Chè Khoai Dẻo 1 -->
+                        <div class="glass-card gallery-item-card">
+                            <div class="gallery-img-container">
+                                <img src="./WS Chè Khoai Dẻo.jpg" alt="The Chè Khoai Dẻo Workshop" class="gallery-img">
+                            </div>
+                            <div class="gallery-card-content">
+                                <span class="gallery-tag">Vietnamese Culinary</span>
+                                <h3 class="gallery-card-title">Workshop "The Chè Khoai Dẻo"</h3>
+                                <p class="gallery-card-desc">Culinary exploration of Vietnamese sweet soup culture with hands-on cooking demonstration.</p>
+                            </div>
+                        </div>
+
+                        <!-- Event 3: Chè Khoai Dẻo 2 -->
+                        <div class="glass-card gallery-item-card">
+                            <div class="gallery-img-container">
+                                <img src="./Workshop Chè Khoai Dẻo.jpg" alt="Dessert Tasting Experience" class="gallery-img">
+                            </div>
+                            <div class="gallery-card-content">
+                                <span class="gallery-tag">Cultural Exchange</span>
+                                <h3 class="gallery-card-title">Vietnamese Dessert Masterclass</h3>
+                                <p class="gallery-card-desc">Vibrant cultural gathering bringing foreigners together to taste and craft authentic Vietnamese recipes.</p>
+                            </div>
+                        </div>
+
+                        <!-- Event 4: Movie Night -->
+                        <div class="glass-card gallery-item-card">
+                            <div class="gallery-img-container">
+                                <img src="./Movie night.jpg" alt="The Movie Night Ma Da" class="gallery-img">
+                            </div>
+                            <div class="gallery-card-content">
+                                <span class="gallery-tag">Film & Folklore</span>
+                                <h3 class="gallery-card-title">The Movie Night: "Ma Da"</h3>
+                                <p class="gallery-card-desc">Film screening and discussion on Vietnamese folklore, river mythology, and spiritual heritage.</p>
+                            </div>
+                        </div>
+
+                        <!-- Event 5: Nem Rán Cooking Class -->
+                        <div class="glass-card gallery-item-card">
+                            <div class="gallery-img-container">
+                                <img src="./Nem rán Cooking class.png" alt="Nem Rán Cooking Class" class="gallery-img">
+                            </div>
+                            <div class="gallery-card-content">
+                                <span class="gallery-tag">Cooking Class</span>
+                                <h3 class="gallery-card-title">Nem Rán Cooking Masterclass</h3>
+                                <p class="gallery-card-desc">Hands-on culinary class teaching international visitors how to wrap and fry authentic Vietnamese spring rolls.</p>
+                            </div>
+                        </div>
+
+                        <!-- Event 6: Vietnamese Class -->
+                        <div class="glass-card gallery-item-card">
+                            <div class="gallery-img-container">
+                                <img src="./Lớp Học Tiếng Việt.png" alt="Community Vietnamese Class" class="gallery-img">
+                            </div>
+                            <div class="gallery-card-content">
+                                <span class="gallery-tag">Language & Education</span>
+                                <h3 class="gallery-card-title">Community Vietnamese Classes</h3>
+                                <p class="gallery-card-desc">Engaging conversational Vietnamese language classes delivered for expat community members at HNE.</p>
+                                <div class="gallery-link-buttons">
+                                    <a href="https://www.facebook.com/reel/1944342616205682" target="_blank" rel="noopener" class="reel-link-btn">🎬 Facebook Reel 1</a>
+                                    <a href="https://www.facebook.com/reel/1455198216223341" target="_blank" rel="noopener" class="reel-link-btn">🎬 Facebook Reel 2</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- FLOATING SLIDE NAVIGATION & PROGRESS BAR -->
+    <div class="slider-controls-bar">
+        <button class="nav-control-btn" id="prev-slide-btn" onclick="prevSlide()" title="Previous Page (Left Arrow)">
+            ◀ Prev
+        </button>
+
+        <div class="slide-dots-container" id="slide-dots">
+            <!-- Dots generated dynamically in JS -->
+        </div>
+
+        <span class="slide-counter-badge" id="slide-counter">
+            Page 01 / 07
+        </span>
+
+        <button class="nav-control-btn" id="next-slide-btn" onclick="nextSlide()" title="Next Page (Right Arrow)">
+            Next ▶
+        </button>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
