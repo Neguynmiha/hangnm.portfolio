@@ -2,8 +2,8 @@
    Design System & Global Variables - Emerald & Gold Corporate Palette
    ========================================================================== */
 :root {
-    --font-heading: 'Outfit', 'Plus Jakarta Sans', sans-serif;
-    --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
 
     /* Theme Palette - Light Mode */
     --bg-main: #FAFBF9;
@@ -206,6 +206,49 @@ ul {
     display: flex;
     align-items: center;
     gap: 0.75rem;
+}
+
+.lang-toggle-btn {
+    background: var(--bg-card);
+    border: 1px solid var(--border-card);
+    height: 40px;
+    padding: 0 0.85rem;
+    border-radius: var(--radius-full);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    transition: var(--transition-fast);
+}
+
+.lang-toggle-btn:hover {
+    border-color: var(--sun-gold);
+    transform: translateY(-1px);
+}
+
+.lang-opt {
+    transition: var(--transition-fast);
+    padding: 0.15rem 0.3rem;
+    border-radius: 6px;
+}
+
+.lang-opt.active {
+    color: var(--primary-emerald);
+    background: var(--emerald-light);
+}
+
+[data-theme="dark"] .lang-opt.active {
+    color: var(--sun-gold);
+    background: rgba(245, 158, 11, 0.18);
+}
+
+.lang-sep {
+    opacity: 0.4;
+    font-weight: 400;
 }
 
 .icon-btn {
